@@ -12,14 +12,14 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: 'http://api.aviationstack.com/v1/flights',
-            data: {
-                access_key: "dd7f7c2e52c0bc8539a2f6a4ab21f22f",
-                // flight_number: 375
-                flight_number: flightNumberInput
+                url: 'http://api.aviationstack.com/v1/flights',
+                data: {
+                    access_key: "80efa230332ce1b5f5e0f2c48772dd15",
+                    // flight_number: 375
+                    flight_number: flightNumberInput
 
-            }
-        })
+                }
+            })
             .then(function (resp) {
 
 
@@ -52,8 +52,8 @@ $(document).ready(function () {
     });
 
 });
+
 function clear() {
     $("#flight-num").val('');
     $(".flight-info").empty();
 }
-
